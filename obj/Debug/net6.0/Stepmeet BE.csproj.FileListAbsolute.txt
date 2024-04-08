@@ -1,0 +1,32 @@
+D:\fl\Stepmeet BE\bin\Debug\net6.0\appsettings.Development.json
+D:\fl\Stepmeet BE\bin\Debug\net6.0\appsettings.json
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Stepmeet BE.exe
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Stepmeet BE.deps.json
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Stepmeet BE.runtimeconfig.json
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Stepmeet BE.dll
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Stepmeet BE.pdb
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\fl\Stepmeet BE\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.csproj.AssemblyReference.cache
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.GeneratedMSBuildEditorConfig.editorconfig
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.AssemblyInfoInputs.cache
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.AssemblyInfo.cs
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.csproj.CoreCompileInputs.cache
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.MvcApplicationPartsAssemblyInfo.cs
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.MvcApplicationPartsAssemblyInfo.cache
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets\msbuild.Stepmeet BE.Microsoft.AspNetCore.StaticWebAssets.props
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets\msbuild.build.Stepmeet BE.props
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Stepmeet BE.props
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Stepmeet BE.props
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets.pack.json
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets.build.json
+D:\fl\Stepmeet BE\obj\Debug\net6.0\staticwebassets.development.json
+D:\fl\Stepmeet BE\obj\Debug\net6.0\scopedcss\bundle\Stepmeet BE.styles.css
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.csproj.CopyComplete
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.dll
+D:\fl\Stepmeet BE\obj\Debug\net6.0\refint\Stepmeet BE.dll
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.pdb
+D:\fl\Stepmeet BE\obj\Debug\net6.0\Stepmeet BE.genruntimeconfig.cache
+D:\fl\Stepmeet BE\obj\Debug\net6.0\ref\Stepmeet BE.dll
