@@ -9,6 +9,7 @@ using Google.Cloud.Firestore.V1;
 using Firebase.Auth;
 using Firebase.Auth.Providers;
 using Firebase.Auth.Repository;
+using System.Web;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -87,6 +88,10 @@ public class AuthController : ControllerBase
                 lastName= model.LastName,
                 email = model.Email,
                 favourites = model.Favorites,
+                isPrivate = model.IsPrivate,
+                following = model.Following,
+                completed = model.Completed,
+                dpUrl = model.DPUrl
                 // Add more user details as needed
             };
 
@@ -101,4 +106,43 @@ public class AuthController : ControllerBase
             return StatusCode(500, $"An error occurred: {ex.Message}");
         }
     }
+
+    [HttpDelete("{email}/delete")]
+    public async Task<IActionResult> DeleteUserByEmail(string email)
+    {
+        try
+        {
+            // Query Firestore to find the user document with the provided email
+            QuerySnapshot querySnapshot = await _firestoreDb.Collection("users")
+                .WhereEqualTo("email", email)
+                .GetSnapshotAsync();
+
+            if (querySnapshot.Count > 0)
+            {
+                // Get the reference to the first user document with the matching email
+                DocumentSnapshot userSnapshot = querySnapshot.Documents[0];
+                DocumentReference userRef = userSnapshot.Reference;
+
+                // Delete the user document
+                await userRef.DeleteAsync();
+
+                var userRecord = await FirebaseAuth.DefaultInstance.GetUserByEmailAsync(email);
+                string uid = userRecord.Uid;
+
+                // Now you have the UID, you can delete the user
+                await FirebaseAuth.DefaultInstance.DeleteUserAsync(uid);
+
+                return Ok("User deleted successfully.");
+            }
+            else
+            {
+                return NotFound("User not found.");
+            }
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, $"Error: {ex.Message}");
+        }
+    }
+
 }

@@ -10,6 +10,7 @@ using Google.Cloud.Firestore.V1;
 using Grpc.Core;
 using System.Net;
 using Grpc.Auth;
+using Google.Cloud.Storage.V1; // Import the namespace
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,12 +44,18 @@ builder.Services.AddSingleton<FirestoreDb>(provider =>
     return firestoreDb;
 });
 
-
-
 // Initialize Firebase Admin SDK
 FirebaseApp.Create(new AppOptions
 {
     Credential = GoogleCredential.FromFile(jsonPath)
+});
+
+// Add StorageClient as a singleton service
+builder.Services.AddSingleton(provider =>
+{
+    var credential = GoogleCredential.FromFile(jsonPath);
+    var storageClient = StorageClient.Create(credential);
+    return storageClient;
 });
 
 var app = builder.Build();
